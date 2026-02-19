@@ -15,12 +15,11 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Connect</h4>
-                    <div style="display: flex; gap: 1rem; margin-top: 1rem; font-size: 1.5rem;">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    <h4>Classroom Info</h4>
+                    <ul style="list-style: none; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Education Block, Main Campus</li>
+                        <li><i class="far fa-clock" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Mon - Fri: 09:00 AM - 05:00 PM</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
