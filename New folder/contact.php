@@ -18,6 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <section style="padding: 4rem 0;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem; align-items: start;">
         <div>
+            <a href="index.php" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 500;" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
             <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get In Touch</h1>
             <p style="color: var(--text-muted); margin-bottom: 2rem;">Have a question or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
             
