@@ -8,7 +8,9 @@ $reminders = $stmt->fetchAll();
 ?>
 
 <section style="padding: 4rem 0;">
-    <div style="margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.php" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 500;" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+        </a>
         <div>
             <h1 style="font-size: 2.5rem;">LMS Reminders</h1>
             <p style="color: var(--text-muted);">Keep track of upcoming quizzes and assignments.</p>
