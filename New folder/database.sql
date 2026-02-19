@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS schedule (
     day ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') NOT NULL,
     subject VARCHAR(100) NOT NULL,
     teacher VARCHAR(100) NOT NULL,
+    room VARCHAR(100),
     start_time TIME NOT NULL,
     end_time TIME NOT NULL
 );
@@ -87,6 +88,29 @@ INSERT INTO users (username, password, role, full_name, email) VALUES
 ('grkhizra20', '1234', 'CR/GR', 'Khizra (GR)', 'khizra@classhub.edu'),
 ('student1', '1234', 'Student', 'Sample Student', 'student@classhub.edu');
 
-INSERT INTO schedule (day, subject, teacher, start_time, end_time) VALUES
-('Monday', 'Web Development', 'Dr. Smith', '09:00:00', '11:00:00'),
-('Tuesday', 'Database Systems', 'Ms. Johnson', '10:00:00', '12:00:00');
+INSERT INTO schedule (day, subject, teacher, room, start_time, end_time) VALUES
+-- Monday
+('Monday', 'AINT-2101-Knowledge Representation and Reasoning', 'Mr. Muhammad Adeel Abid', 'TB.1.10L-Class Room', '09:00:00', '10:30:00'),
+('Monday', 'AINT-2201-Knowledge Representation and Reasoning-Lab (B)', 'Mr. Inzimam Shahid', 'TB.1.10L-Class Room', '10:30:00', '12:00:00'),
+('Monday', 'SSCI-2131-Civics and Community Engagement', 'Ms. LARAIB MARYAM', 'TB.1.01L-Class Room', '12:00:00', '13:30:00'),
+
+-- Tuesday
+('Tuesday', 'COSC-2112-Artificial Intelligence', 'Dr. Muhammad Shadab Alam Hashmi', 'TB.1.10L-Class Room', '09:00:00', '10:30:00'),
+('Tuesday', 'INFT-4126-Professional Practices', 'Mr. Hassan Saleem', 'TB.1.10L-Class Room', '10:30:00', '12:00:00'),
+('Tuesday', 'COSC-1104-Software Engineering', 'Ms. Rida Fatima', 'TB.1.10L-Class Room', '12:00:00', '13:30:00'),
+('Tuesday', 'COSC-2212-Artificial Intelligence-Lab', 'Mr. Usman Shafeeq', 'COSC.1.06R-CS Lab', '13:30:00', '15:00:00'),
+('Tuesday', 'COSC-2203-Database Systems-Lab', 'Ms. Maria Mansab', 'ELEN.1.04R-Engineering Computer Lab', '15:00:00', '16:30:00'),
+
+-- Wednesday
+('Wednesday', 'COSC-2212-Artificial Intelligence-Lab (B)', 'Mr. Usman Shafeeq', 'TB.1.10L-Class Room', '13:30:00', '15:00:00'),
+('Wednesday', 'COSC-2103-Database Systems', 'Ms. Maria Mansab', 'TB.1.10L-Class Room', '15:00:00', '16:30:00'),
+
+-- Thursday
+('Thursday', 'COSC-1104-Software Engineering', 'Ms. Rida Fatima', 'CSIT.1.03L-Lecture Theater', '09:00:00', '10:30:00'),
+('Thursday', 'COSC-2103-Database Systems', 'Ms. Maria Mansab', 'TB.2.01L-Class Room', '10:30:00', '12:00:00'),
+('Thursday', 'AINT-2201-Knowledge Representation and Reasoning-Lab', 'Mr. Inzimam Shahid', 'COSC.2.05L-Microprocessor Lab', '12:00:00', '13:30:00'),
+('Thursday', 'ISLS-1140-Seerat of Holy Prophet Muhammad (SAW)', 'Mr. Muhammad Sohaib Aslam', 'TB.1.10L-Class Room', '13:30:00', '15:00:00'),
+('Thursday', 'COSC-2203-Database Systems-Lab (B)', 'Ms. Maria Mansab', 'TB.1.10L-Class Room', '15:00:00', '16:30:00'),
+
+-- Friday
+('Friday', 'Friday Prayer', '-', '-', '13:30:00', '14:00:00');
