@@ -42,6 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <section style="padding: 4rem 0;">
     <div style="max-width: 600px; margin: 0 auto;">
+        <a href="index.php" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 500;" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Dashboard
+        </a>
         <h1 style="margin-bottom: 2rem;">Profile Settings</h1>
         
         <?php if ($msg): ?>
